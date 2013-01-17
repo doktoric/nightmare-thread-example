@@ -1,0 +1,17 @@
+
+<!DOCTYPE aspectj PUBLIC    "-//AspectJ//DTD//EN"    "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+
+<aspectj>
+	<weaver>
+		<include within="com.acme.junior..*" />
+	</weaver>
+	<!-- <weaver options="-XnoInline -Xreweavable -verbose -debug -showWeaveInfo"> -->
+	<!-- <include within="com.budapest.nightmare..*" /> -->
+	<!-- </weaver> -->
+	<aspects>
+		
+		<aspect name="com.acme.junior.aop.AspectsHorrorPlayer" />
+        <aspect name="com.acme.junior.aop.AspectsMaster" />
+        <aspect name="com.acme.junior.aop.AspectsPlayer" />
+	</aspects>
+</aspectj>
